@@ -1,0 +1,21 @@
+import React, { Component } from 'react';
+import Die from './Die';
+import './Dice.css';
+
+class Dice extends Component {
+  render() {
+    return <div className="Dice">
+      {this.props.dice.map((d, idx) =>
+        <Die toggleLocked={this.props.toggleLocked}
+          val={d}
+          locked={this.props.locked[idx]}
+          idx={idx}
+          key={idx} />
+      )}
+      { console.log(this.props.locked) }
+
+    </div>
+  }
+}
+
+export default Dice;
