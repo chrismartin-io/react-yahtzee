@@ -11,4 +11,4 @@ it ('updates locked array in state', () => {
   let wrapper = mount(<Game />);
   wrapper.find('button').first().simulate('click');
   expect(wrapper.state().locked[0]).toEqual(true);
-})
+});

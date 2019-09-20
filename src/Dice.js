@@ -12,7 +12,6 @@ class Dice extends Component {
           idx={idx}
           key={idx} />
       )}
-      { console.log(this.props.locked) }
 
     </div>
   }
